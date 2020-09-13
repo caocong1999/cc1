@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>课后习题</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto}
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={'questions':[{'question':'人生礼仪的发展趋势是世俗化和什么?','answers':['宗教化','人性化','简单化','集体化'],'correctAnswer':3},{'question':'人生礼仪中最具有通过意义的是?','answers':['诞生礼','婚礼','成年礼','丧葬礼'],'correctAnswer':3},{'question':'以下哪项不是婚姻六礼之一?','answers':['纳采','问名','邀约','亲迎'],'correctAnswer':3},{'question':'什么礼仪是人生礼仪的最后一站？','answers':['诞生礼','婚礼','成年礼','丧葬礼'],'correctAnswer':4}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="demo">
+	<div id='quiz-container'></div>
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>传统人生礼仪</p>
+</div>
+</body>
+</html>
